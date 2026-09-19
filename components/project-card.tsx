@@ -128,19 +128,14 @@ export function ProjectCard({ project }: { project: Project }) {
       )}
 
       {project.highlights && project.highlights.length > 0 && (
-        <div className="border-t border-white/10 p-6 sm:p-8">
-          <h4 className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500">
-            Notable problems solved
-          </h4>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {project.highlights.map((h) => (
-              <div key={h.title}>
-                <p className="text-sm font-semibold text-neutral-200">{h.title}</p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-400">{h.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ul className="flex flex-wrap gap-x-6 gap-y-2 border-t border-white/10 p-6 sm:p-8">
+          {project.highlights.map((h) => (
+            <li key={h} className="flex items-center gap-2 text-sm text-neutral-400">
+              <span className="size-1 rounded-full bg-accent" />
+              {h}
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
