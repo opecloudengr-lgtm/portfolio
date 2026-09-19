@@ -109,6 +109,83 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "nexora",
+    name: "Nexora",
+    tagline: "Event ticketing, VIP guest management & QR access control",
+    description:
+      "A full-stack event registration, ticketing and access-control platform: organizers create and design events, sell free or paid tickets (Paystack), invite VIP guests to private events, assign seating, and verify entry at the door with cryptographically secure, single-use QR tickets.",
+    stack: [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Redis",
+      "JWT auth",
+      "Paystack",
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "TanStack Query",
+      "Pytest",
+    ],
+    status: "case-study",
+    repoUrl: "https://github.com/opecloudengr-lgtm/Th",
+    highlights: [
+      {
+        title: "Server-authoritative payments & atomic check-in",
+        body: "Paystack payment verification and ticket check-in are both handled server-side with atomic, race-condition-safe operations, verified by a real multi-threaded concurrency test that fires simultaneous scans of the same ticket.",
+      },
+      {
+        title: "23 automated tests against a real database",
+        body: "Pytest suite covering auth, IDOR (broken object-level authorization) checks, payment idempotency, and concurrency — run against a real PostgreSQL database rather than mocks.",
+      },
+      {
+        title: "One relative API path works everywhere",
+        body: "The browser only ever calls the Next.js server it loaded the page from; a server-side Route Handler proxies to the backend using an env var read fresh on every request, so the same build works unchanged on localhost, in Codespaces, or behind a real domain.",
+      },
+    ],
+  },
+  {
+    slug: "gatelist",
+    name: "GateList",
+    tagline: "Private event access control — digital guest lists & door scanning",
+    description:
+      "Replaces the paper guest list and printed invitation cards at invite-only events (weddings, galas, private parties) with a single secure digital ticket per guest, VIP/importance tagging, and a scan-and-verify door app that makes duplicate or unauthorized entries impossible. No public ticketing, no guest-facing sign-up — every event is private by default.",
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Socket.IO",
+      "React",
+      "Vite",
+      "PWA",
+      "Railway",
+    ],
+    status: "case-study",
+    repoUrl: "https://github.com/opecloudengr-lgtm/Gatelist-APP",
+    highlights: [
+      {
+        title: "Signed tickets, not data",
+        body: "Each QR code encodes an HMAC-signed token (ticket, event and guest IDs plus a nonce) instead of any personal data — a copied or edited QR can't be pointed at a different event or guest, with the database row as the single source of truth for whether it's actually usable.",
+      },
+      {
+        title: "Duplicate check-ins prevented at the database layer",
+        body: "A scan transitions a ticket ISSUED → CHECKED_IN with a single conditional UPDATE, relying on Postgres to serialize concurrent writes so exactly one of two simultaneous scans of the same code succeeds.",
+      },
+      {
+        title: "Offline-first door scanning",
+        body: "The staff scanner queues scans in IndexedDB when offline and syncs them once connectivity returns, with an idempotent sync so a retried batch never double-checks-in a guest.",
+      },
+      {
+        title: "PWA instead of a native app",
+        body: "Ships as an installable, camera-capable web app instead of a Flutter/React Native app — no app store review cycle, same offline queueing and scanning jobs, and a native shell could still be swapped in later without changing the API.",
+      },
+    ],
+  },
+  {
     slug: "campuschain",
     name: "CampusChain",
     tagline: "Student marketplace & student-to-student help platform",
