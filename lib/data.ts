@@ -131,6 +131,15 @@ export const projects: Project[] = [
     ],
     status: "case-study",
     repoUrl: "https://github.com/opecloudengr-lgtm/Th",
+    images: [
+      { src: "/projects/nexora/home.jpg", alt: "Nexora homepage", label: "Homepage" },
+      { src: "/projects/nexora/events.jpg", alt: "Browse public events page", label: "Explore events" },
+      { src: "/projects/nexora/event-detail.jpg", alt: "Event detail page with ticket purchase", label: "Event & tickets" },
+      { src: "/projects/nexora/organizer-dashboard.jpg", alt: "Organizer dashboard", label: "Organizer dashboard" },
+      { src: "/projects/nexora/organizer-manage.jpg", alt: "Organizer event management screen with ticket types", label: "Manage event" },
+      { src: "/projects/nexora/mobile-home.jpg", alt: "Mobile view of homepage", label: "Mobile — homepage", frame: "mobile" },
+      { src: "/projects/nexora/mobile-events.jpg", alt: "Mobile view of events list", label: "Mobile — events", frame: "mobile" },
+    ],
     highlights: [
       {
         title: "Server-authoritative payments & atomic check-in",
@@ -166,6 +175,14 @@ export const projects: Project[] = [
     ],
     status: "case-study",
     repoUrl: "https://github.com/opecloudengr-lgtm/Gatelist-APP",
+    images: [
+      { src: "/projects/gatelist/login.jpg", alt: "GateList sign-in page", label: "Sign in" },
+      { src: "/projects/gatelist/events.jpg", alt: "Organizer's events list", label: "Your events" },
+      { src: "/projects/gatelist/event-dashboard.jpg", alt: "Event dashboard with live check-in stats by guest category", label: "Event dashboard" },
+      { src: "/projects/gatelist/guests.jpg", alt: "Guest list with categories and check-in status", label: "Guest list" },
+      { src: "/projects/gatelist/mobile-scan.jpg", alt: "Mobile door-scanner view", label: "Mobile — scanner", frame: "mobile" },
+      { src: "/projects/gatelist/mobile-guests.jpg", alt: "Mobile view of the guest list", label: "Mobile — guest list", frame: "mobile" },
+    ],
     highlights: [
       {
         title: "Signed tickets, not data",
