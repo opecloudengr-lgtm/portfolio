@@ -5,7 +5,7 @@ export const profile = {
   tagline: "I build practical digital products, from idea to working MVP.",
   bio: "Full-stack developer building real, working products — web apps, APIs, and databases, shipped and deployed with a growing focus on DevOps and AI-assisted development.",
   location: "Arepo, Ogun State, Nigeria",
-  email: "ope.cloudengr.@gmail.com",
+  email: "ope.cloudengr@gmail.com",
   whatsapp: "+2347059877722",
   whatsappHref: "https://wa.me/2347059877722",
   linkedin: "https://www.linkedin.com/in/muhammed-opeyemi-7a814422b",
