@@ -1,9 +1,9 @@
 export const profile = {
   name: "Opeyemi Samuel Muhammed",
   title: "Junior Full-Stack Developer",
-  subtitle: "DevOps Enthusiast · AI-Assisted Developer",
-  tagline: "I build practical digital products, from idea to working MVP.",
-  bio: "Full-stack developer building real, working products — web apps, APIs, and databases, shipped and deployed with a growing focus on DevOps and AI-assisted development.",
+  stack: "Next.js, React, Node.js & PostgreSQL",
+  tagline: "Junior Full-Stack Developer specializing in Next.js, React, Node.js & PostgreSQL.",
+  bio: "I build web applications, REST APIs and database-backed products, with growing experience in DevOps and AI-assisted development.",
   location: "Arepo, Ogun State, Nigeria",
   email: "ope.cloudengr@gmail.com",
   whatsapp: "+2347059877722",

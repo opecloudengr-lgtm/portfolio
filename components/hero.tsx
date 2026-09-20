@@ -21,7 +21,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-3 font-mono text-sm text-accent sm:text-base">
-          {profile.title} · {profile.subtitle}
+          {profile.title} | {profile.stack}
         </p>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400">
