@@ -10,6 +10,7 @@ export const profile = {
   whatsappHref: "https://wa.me/2347059877722",
   linkedin: "https://www.linkedin.com/in/muhammed-opeyemi-7a814422b",
   github: "https://github.com/opecloudengr-lgtm",
+  cvUrl: "/cv/Opeyemi-Samuel-Muhammed-CV.pdf",
 };
 
 export const skillGroups = [

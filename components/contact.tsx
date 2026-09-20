@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, MapPin } from "lucide-react";
+import { Mail, MessageCircle, MapPin, FileDown } from "lucide-react";
 import { GithubIcon } from "@/components/icons/github-icon";
 import { LinkedinIcon } from "@/components/icons/linkedin-icon";
 import { profile } from "@/lib/data";
@@ -28,6 +28,13 @@ const LINKS = [
     href: profile.github,
     icon: GithubIcon,
   },
+  {
+    label: "Download CV",
+    value: "PDF",
+    href: profile.cvUrl,
+    icon: FileDown,
+    download: true,
+  },
 ];
 
 export function Contact() {
@@ -49,8 +56,9 @@ export function Contact() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.download ? undefined : "_blank"}
+              rel={link.download ? undefined : "noopener noreferrer"}
+              download={link.download}
               className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition-colors hover:border-accent/40"
             >
               <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-white/5 text-accent">
