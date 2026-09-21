@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, FileText, MapPin } from "lucide-react";
 import { profile } from "@/lib/data";
 
 export function Hero() {
@@ -21,7 +21,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-3 font-mono text-sm text-accent sm:text-base">
-          {profile.title} · {profile.subtitle}
+          {profile.title} | {profile.stack}
         </p>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400">
@@ -34,6 +34,14 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-neutral-950 transition-opacity hover:opacity-90"
           >
             See my work <ArrowRight size={16} />
+          </a>
+          <a
+            href={profile.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-neutral-200 transition-colors hover:border-white/30"
+          >
+            <FileText size={16} /> View CV
           </a>
           <a
             href={profile.whatsappHref}

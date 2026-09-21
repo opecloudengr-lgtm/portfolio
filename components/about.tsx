@@ -13,19 +13,14 @@ export function About() {
           <div>
             <h3 className="text-sm font-semibold text-neutral-200">Where I&apos;m headed</h3>
             <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-              Full-stack development → DevOps → Cloud → AI-powered applications. I&apos;m
-              continuing to strengthen my foundations in Linux, Git, deployment, containers,
-              cloud infrastructure, backend engineering, and modern AI-assisted software
-              development.
+              Full-stack development → DevOps → Cloud → AI-powered applications.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-neutral-200">Before software</h3>
             <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-              My software work is supported by a background in Metallurgical Engineering, with
-              exposure to materials, technical drawing, fabrication, welding, and practical
-              workshop work — an engineering mindset for problem-solving that carries directly
-              into how I debug and build.
+              A background in Metallurgical Engineering — the same problem-solving mindset I
+              bring to debugging and building today.
             </p>
           </div>
         </div>
